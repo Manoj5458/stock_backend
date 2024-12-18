@@ -1,0 +1,4 @@
+django
+upstox-python-sdk
+django-debug-toolbar
+requests
