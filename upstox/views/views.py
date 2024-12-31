@@ -3,7 +3,7 @@ upstox views
 """
 
 # from django.http import HttpResponseRedirect
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import redirect
 # import upstox_client
 import requests
@@ -11,6 +11,7 @@ from upstox_client.rest import ApiException
 
 from upstox.config import API_KEY, REDIRECT_URI,API_SECRET
 
+user_response = {}
 
 # Create your views here.
 def index(request):
@@ -45,11 +46,11 @@ def get_token(code):
     # Make the POST request to the Upstox API
     try:
         response = requests.post(url, data=data)
-        
         # Check if the request was successful
         if response.status_code == 200:
-            print(response.json())
-            return JsonResponse(response.json())
+            user_response.update(response.json()) 
+            print(f"user_response {user_response}")           
+            return HttpResponseRedirect('http://localhost:3000/upstox')
         else:
             api_response = response.json()
             error_message = api_response.get('errors', [])
@@ -58,3 +59,7 @@ def get_token(code):
     
     except requests.exceptions.RequestException as e:
         return HttpResponse(f"Request failed: {str(e)}", status=500)
+    
+def get_access_token(request):
+    request.session['access_token'] = user_response.get('access_token');
+    return JsonResponse(user_response)

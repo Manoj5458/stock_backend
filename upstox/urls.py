@@ -12,4 +12,5 @@ urlpatterns = [
     path('login', views.login, name='login'),
     # path('access-token', AccessTokenView.as_view(), name='access-token'),
     path('access-token', views.access_token, name='access-token'),
+    path('getAccessToken', views.get_access_token, name='get-access-token'),
 ]
