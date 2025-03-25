@@ -3,7 +3,7 @@
     "configurations": [
       {
         "name": "Django: Runserver",
-        "type": "python",
+        "type": "debugpy",
         "request": "launch",
         "program": "${workspaceFolder}/manage.py",
         "args": [
@@ -12,6 +12,7 @@
         ],
         "django": true,
         "env": {
+          "pythonPath": "${workspaceFolder}/venv/bin/python",
           "DJANGO_SETTINGS_MODULE": "stock_backend.settings"
         },
         "justMyCode": true

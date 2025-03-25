@@ -39,6 +39,8 @@ INTERNAL_IPS = [
     # ...
 ]
 
+# settings.py
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Stores sessions in the database
 
 # Application definition
 
