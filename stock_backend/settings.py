@@ -24,12 +24,15 @@ SECRET_KEY = 'django-insecure-9f!xg)%70+yfxes4@0-xhm@a#kik7^v2m%*ll7k0p9r&^b-2gd
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# CSRF_COOKIE_SECURE = not DEBUG
 
 ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
+
+CORS_ALLOW_CREDENTIALS = True
 
 #Internal IP
 
@@ -51,10 +54,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'upstox',
-    'corsheaders'
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,7 +68,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+    'https://yourproductiondomain.com',  # Add your production domain(s) here
+    'http://127.0.0.1:3000',          # You might need this for some setups
+    # Add any other domains or subdomains that will be making POST requests
 ]
 
 ROOT_URLCONF = 'stock_backend.urls'

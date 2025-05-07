@@ -2,3 +2,6 @@ django
 upstox-python-sdk
 django-debug-toolbar
 requests
+djangorestframework
+beautifulsoup4
+pandas

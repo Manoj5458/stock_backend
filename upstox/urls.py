@@ -4,13 +4,15 @@ Upstox URL Configuration
 """
 
 from django.urls import path
-from upstox.views import views
-from .views.access_token_view import AccessTokenView 
+from upstox.views.index_views import index
+from upstox.views.auth_views import login, access_token, get_access_token, logout
+from upstox.views.screener_views import screener
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('login', views.login, name='login'),
-    # path('access-token', AccessTokenView.as_view(), name='access-token'),
-    path('access-token', views.access_token, name='access-token'),
-    path('getAccessToken', views.get_access_token, name='get-access-token'),
+    path('', index, name='index'),
+    path('login', login, name='login'),
+    path('access_token', access_token, name='access_token'),
+    path('get_access_token', get_access_token, name='get_access_token'),
+    path('logout', logout, name='logout'),
+    path('screener', screener, name='screener'),
 ]

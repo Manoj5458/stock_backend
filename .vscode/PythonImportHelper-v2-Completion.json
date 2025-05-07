@@ -89,6 +89,14 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "JsonResponse",
         "importPath": "django.http",
         "description": "django.http",
@@ -105,11 +113,19 @@
         "documentation": {}
     },
     {
-        "label": "View",
-        "importPath": "django.views",
-        "description": "django.views",
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
         "isExtraImport": true,
-        "detail": "django.views",
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -121,28 +137,20 @@
         "documentation": {}
     },
     {
-        "label": "upstox_client",
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "upstox_client",
-        "description": "upstox_client",
-        "detail": "upstox_client",
-        "documentation": {}
-    },
-    {
-        "label": "ApiException",
-        "importPath": "upstox_client.rest",
-        "description": "upstox_client.rest",
-        "isExtraImport": true,
-        "detail": "upstox_client.rest",
-        "documentation": {}
-    },
-    {
-        "label": "ApiException",
-        "importPath": "upstox_client.rest",
-        "description": "upstox_client.rest",
-        "isExtraImport": true,
-        "detail": "upstox_client.rest",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
         "documentation": {}
     },
     {
@@ -194,11 +202,19 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
         "documentation": {}
     },
     {
@@ -210,12 +226,11 @@
         "documentation": {}
     },
     {
-        "label": "requests",
-        "kind": 6,
+        "label": "ApiException",
+        "importPath": "upstox_client.rest",
+        "description": "upstox_client.rest",
         "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "detail": "upstox_client.rest",
         "documentation": {}
     },
     {
@@ -299,7 +314,7 @@
         "kind": 5,
         "importPath": "stock_backend.settings",
         "description": "stock_backend.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-9f!xg)%70+yfxes4@0-xhm@a#kik7^v2m%*ll7k0p9r&^b-2gd'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n#Internal IP\nINTERNAL_IPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-9f!xg)%70+yfxes4@0-xhm@a#kik7^v2m%*ll7k0p9r&^b-2gd'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',",
         "detail": "stock_backend.settings",
         "documentation": {}
     },
@@ -308,7 +323,7 @@
         "kind": 5,
         "importPath": "stock_backend.settings",
         "description": "stock_backend.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-9f!xg)%70+yfxes4@0-xhm@a#kik7^v2m%*ll7k0p9r&^b-2gd'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n#Internal IP\nINTERNAL_IPS = [\n    # ...\n    \"127.0.0.1\",\n    # ...\n]",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-9f!xg)%70+yfxes4@0-xhm@a#kik7^v2m%*ll7k0p9r&^b-2gd'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n]\n#Internal IP\nINTERNAL_IPS = [\n    # ...",
         "detail": "stock_backend.settings",
         "documentation": {}
     },
@@ -317,7 +332,7 @@
         "kind": 5,
         "importPath": "stock_backend.settings",
         "description": "stock_backend.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n#Internal IP\nINTERNAL_IPS = [\n    # ...\n    \"127.0.0.1\",\n    # ...\n]\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n]\n#Internal IP\nINTERNAL_IPS = [\n    # ...\n    \"127.0.0.1\",\n    # ...",
         "detail": "stock_backend.settings",
         "documentation": {}
     },
@@ -326,7 +341,16 @@
         "kind": 5,
         "importPath": "stock_backend.settings",
         "description": "stock_backend.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n#Internal IP\nINTERNAL_IPS = [\n    # ...\n    \"127.0.0.1\",\n    # ...\n]\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',",
+        "peekOfCode": "ALLOWED_HOSTS = []\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n]\n#Internal IP\nINTERNAL_IPS = [\n    # ...\n    \"127.0.0.1\",\n    # ...\n]",
+        "detail": "stock_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "stock_backend.settings",
+        "description": "stock_backend.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n]\n#Internal IP\nINTERNAL_IPS = [\n    # ...\n    \"127.0.0.1\",\n    # ...\n]\n# Application definition",
         "detail": "stock_backend.settings",
         "documentation": {}
     },
@@ -344,7 +368,7 @@
         "kind": 5,
         "importPath": "stock_backend.settings",
         "description": "stock_backend.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'debug_toolbar',\n    'upstox'\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'debug_toolbar',\n    'upstox',\n    'corsheaders',",
         "detail": "stock_backend.settings",
         "documentation": {}
     },
@@ -353,7 +377,7 @@
         "kind": 5,
         "importPath": "stock_backend.settings",
         "description": "stock_backend.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'debug_toolbar.middleware.DebugToolbarMiddleware',\n]",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'debug_toolbar.middleware.DebugToolbarMiddleware',\n    'corsheaders.middleware.CorsMiddleware'",
         "detail": "stock_backend.settings",
         "documentation": {}
     },
@@ -479,17 +503,17 @@
         "kind": 6,
         "importPath": "upstox.views.access_token_view",
         "description": "upstox.views.access_token_view",
-        "peekOfCode": "class AccessTokenView(View):\n    api_version = \"v2\"\n    clientId = API_KEY\n    clientSecret = API_SECRET\n    grantType = \"authorization_code\"\n    redirectUri = REDIRECT_URI\n    def post(self,request):\n        code = request.GET.get(\"code\")\n        if code:\n            try:",
+        "peekOfCode": "class AccessTokenView(View):\n    api_response = {}\n    @staticmethod\n    def get_token(code):\n        code = code\n    # Prepare data for the API request\n        data = {\n            \"client_id\": API_KEY,\n            \"client_secret\": API_SECRET,\n            \"grant_type\": \"authorization_code\",",
         "detail": "upstox.views.access_token_view",
         "documentation": {}
     },
     {
-        "label": "MyPostView",
+        "label": "ScreenerView",
         "kind": 6,
-        "importPath": "upstox.views.post_view",
-        "description": "upstox.views.post_view",
-        "peekOfCode": "class MyPostView(View):\n    def post(self, request):\n        # Access POST data\n        data = request.POST.get('my_data')  # Replace 'my_data' with your input name\n        # Process the data as needed\n        response_data = {\n            'message': 'Data received successfully!',\n            'data': data,\n        }\n        return JsonResponse(response_data)",
-        "detail": "upstox.views.post_view",
+        "importPath": "upstox.views.screener",
+        "description": "upstox.views.screener",
+        "peekOfCode": "class ScreenerView(View):\n    def __main__(self):\n        self.fetch_screener_data(\"RELIANCEIND\")\n    def fetch_screener_data(company_name):\n        base_url = \"https://www.screener.in/company/\"\n        company_url = f\"{base_url}{company_name.upper()}/consolidated/\"\n        # Send a GET request and handle potential errors\n        response = requests.get(company_url)\n        if response.status_code != 200:\n            print(\"Error fetching data. Check company name or website.\")",
+        "detail": "upstox.views.screener",
         "documentation": {}
     },
     {
@@ -524,7 +548,43 @@
         "kind": 2,
         "importPath": "upstox.views.views",
         "description": "upstox.views.views",
-        "peekOfCode": "def get_token(code):\n    # Prepare data for the API request\n    data = {\n        \"client_id\": API_KEY,\n        \"client_secret\": API_SECRET,\n        \"grant_type\": \"authorization_code\",\n        \"redirect_uri\": REDIRECT_URI,\n        \"code\": code\n    }\n    url = 'https://api.upstox.com/v2/login/authorization/token'",
+        "peekOfCode": "def get_token(code):\n    # Prepare data for the API request\n    data = {\n        \"client_id\": API_KEY,\n        \"client_secret\": API_SECRET,\n        \"grant_type\": \"authorization_code\",\n        \"redirect_uri\": REDIRECT_URI,\n        \"code\": code,\n    }\n    url = \"https://api.upstox.com/v2/login/authorization/token\"",
+        "detail": "upstox.views.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_access_token",
+        "kind": 2,
+        "importPath": "upstox.views.views",
+        "description": "upstox.views.views",
+        "peekOfCode": "def get_access_token(request):\n    request.session[\"access_token\"] = user_response.get(\"access_token\")\n    return JsonResponse(user_response)\ndef logout(request):\n    request.session.flush()\n    logout_url = \"https://api.upstox.com/v2/login/logout\"\n    url_params = {\"access_token\": request.session[\"access_token\"]}\n    try:\n        response = requests.post(logout_url, url_params)\n        if response.status_code == 200:",
+        "detail": "upstox.views.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "upstox.views.views",
+        "description": "upstox.views.views",
+        "peekOfCode": "def logout(request):\n    request.session.flush()\n    logout_url = \"https://api.upstox.com/v2/login/logout\"\n    url_params = {\"access_token\": request.session[\"access_token\"]}\n    try:\n        response = requests.post(logout_url, url_params)\n        if response.status_code == 200:\n            return HttpResponseRedirect(\"http://localhost:3000/\")\n        else:\n            return HttpResponse(\"Logout failed\", status=response.status_code)",
+        "detail": "upstox.views.views",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_screener_data",
+        "kind": 2,
+        "importPath": "upstox.views.views",
+        "description": "upstox.views.views",
+        "peekOfCode": "def fetch_screener_data(company_name):\n    base_url = \"https://www.screener.in/company/\"\n    company_url = f\"{base_url}{company_name.upper()}/consolidated/\"\n    # Send a GET request and handle potential errors\n    response = requests.get(company_url)\n    if response.status_code != 200:\n        print(\"Error fetching data. Check company name or website.\")\n        return None\n    # Parse the HTML response\n    soup = BeautifulSoup(response.text, \"html.parser\")",
+        "detail": "upstox.views.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_response",
+        "kind": 5,
+        "importPath": "upstox.views.views",
+        "description": "upstox.views.views",
+        "peekOfCode": "user_response = {}\n# Create your views here.\ndef index(request):\n    \"\"\"index page\"\"\"\n    return HttpResponse(\"Hello, world. You're at the upstox index.\")\ndef login(request):\n    auth_url = (\n        f\"https://api.upstox.com/v2/login/authorization/dialog\"\n        f\"?response_type=code&client_id={API_KEY}&redirect_uri={REDIRECT_URI}\"\n    )",
         "detail": "upstox.views.views",
         "documentation": {}
     },
@@ -542,7 +602,7 @@
         "kind": 5,
         "importPath": "upstox.config",
         "description": "upstox.config",
-        "peekOfCode": "API_KEY = '919ac699-c816-4dd9-9df8-c4c9b4bb41c5'\nAPI_SECRET = 'yuuwu7wszi'\nREDIRECT_URI = 'http://localhost:8000/upstox/access-token'",
+        "peekOfCode": "API_KEY = '919ac699-c816-4dd9-9df8-c4c9b4bb41c5'\nAPI_SECRET = '6q3g6p9oce'\nREDIRECT_URI = 'http://localhost:8000/upstox/access-token'",
         "detail": "upstox.config",
         "documentation": {}
     },
@@ -551,7 +611,7 @@
         "kind": 5,
         "importPath": "upstox.config",
         "description": "upstox.config",
-        "peekOfCode": "API_SECRET = 'yuuwu7wszi'\nREDIRECT_URI = 'http://localhost:8000/upstox/access-token'",
+        "peekOfCode": "API_SECRET = '6q3g6p9oce'\nREDIRECT_URI = 'http://localhost:8000/upstox/access-token'",
         "detail": "upstox.config",
         "documentation": {}
     },
@@ -569,7 +629,7 @@
         "kind": 5,
         "importPath": "upstox.urls",
         "description": "upstox.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login', views.login, name='login'),\n    # path('access-token',MyPostView.as_view() , name='get-code'),\n    # path('access-token', AccessTokenView.as_view(), name='access-token'),\n    path('access-token', views.access_token, name='access-token'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login', views.login, name='login'),\n    # path('access-token', AccessTokenView.as_view(), name='access-token'),\n    path('screener', ScreenerView.as_view(), name='screener'),\n    path('access-token', views.access_token, name='access-token'),\n    path('getAccessToken', views.get_access_token, name='get-access-token'),\n]",
         "detail": "upstox.urls",
         "documentation": {}
     },
